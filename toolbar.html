@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <title>Toolbar Layout</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css">
+   </head>
+   <body>
+      <div class="views">
+         <div class="view view-main">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="center sliding">Toolbar Layout</div>
+               </div>
+            </div>
+            <div class="pages navbar-through">
+               <div data-page="index" class="page with-subnavbar">
+                  <div class="page-content">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nibh felis. Nunc consequat diam et tellus tempor gravida. Donec hendrerit aliquet risus, ut tempor purus dictum sit amet. Aenean sagittis interdum leo in molestie. Aliquam sodales in diam eu consectetur. Sed posuere a orci id imperdiet.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="toolbar">
+               <div class="toolbar-inner">
+                  <a href="#" class="link">Link 1</a>
+                  <a href="#" class="link">Link 2</a>
+                  <a href="#" class="link">Link 3</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
+      <script>
+      // here initialize the app
+	  var myApp = new Framework7() ;
+
+	  // If your using custom DOM library, then save it to $$ variable
+	  var $$ = Dom7;
+
+	  // Add the view
+	  var mainView = myApp.addView('.view-main', {
+	    // enable the dynamic navbar for this view
+	    dynamicNavbar: true
+	  });
+      </script>
+   </body>
+</html>
